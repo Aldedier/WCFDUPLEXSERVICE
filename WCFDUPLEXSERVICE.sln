@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFDUPLEXSERVICE", "WCFDUPLEXSERVICE\WCFDUPLEXSERVICE.csproj", "{51EB26EC-E1A8-4C02-B3CC-14817F6625C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteDuplex", "ClienteDuplex\ClienteDuplex.csproj", "{B369CBA0-8DA3-4557-9AD6-E75731AF6A0F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{51EB26EC-E1A8-4C02-B3CC-14817F6625C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51EB26EC-E1A8-4C02-B3CC-14817F6625C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51EB26EC-E1A8-4C02-B3CC-14817F6625C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B369CBA0-8DA3-4557-9AD6-E75731AF6A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B369CBA0-8DA3-4557-9AD6-E75731AF6A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B369CBA0-8DA3-4557-9AD6-E75731AF6A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B369CBA0-8DA3-4557-9AD6-E75731AF6A0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
