@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ServiceModel;
 
 namespace ClienteDuplex
 {
@@ -10,6 +7,35 @@ namespace ClienteDuplex
     {
         static void Main(string[] args)
         {
+            InstanceContext instanceContext = new InstanceContext(new CallBackHandler());
+
+            CalculatorServiceClient client = new CalculatorServiceClient(instanceContext);
+
+            client.AddTo(5D);
+            client.SubstractFrom(3D);
+            client.MultiplyBy(12D);
+            client.DivideBy(2D);
+
+            client.Clear();
+            Console.ReadLine();
+            client.Close();
+
+            Console.WriteLine("Terminado");
+            Console.ReadKey();
+
+        }
+
+        private class CallBackHandler : ICalculatorServiceCallback
+        {
+            public CallBackHandler()
+            {
+            }
+
+            public void Equal(double result) =>
+                Console.WriteLine($"result {result}");
+
+            public void Equation(string eqn) =>
+                Console.WriteLine($"equation {eqn}");
         }
     }
 }
